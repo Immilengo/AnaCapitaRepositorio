@@ -1,0 +1,111 @@
+/* style.css */
+:root {
+    --primary: #6c63ff;
+    --dark: #333;
+    --light: #f9f9f9;
+  }
+  *{
+    margin: 0px 0px;
+    padding: 0px 0px;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Efeito de transição suave ao rolar */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .header {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 5%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+  }
+  
+  .nav-links a {
+    position: relative;
+    text-decoration: none;
+  }
+  .nav-links li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 10%;
+  }
+  
+  .highlight {
+    color: var(--primary);
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+  }
+  .hero-image img {
+    transition: transform 0.5s;
+  }
+  .hero:hover .hero-image img {
+    transform: translateY(-20px);
+  }
+  .project-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  .project-img{
+    border-radius: 8px 8px;
+    box-shadow: 2px 2px 5px 0px;
+    padding: 2px;
+    margin: 5px;
+    size: 250px 300px;
+  }
+  #contact{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  .projects{
+    text-align: center;
+    justify-content: center;
+    margin: auto auto;
+  }

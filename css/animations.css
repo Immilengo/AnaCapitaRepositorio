@@ -1,0 +1,27 @@
+/* animations.css */
+/* Animação de entrada */
+[data-animation] {
+    opacity: 0;
+    transition: opacity 0.8s, transform 0.8s;
+  }
+  
+  [data-animation="fade-up"] {
+    transform: translateY(50px);
+  }
+  
+  [data-animation="fade-down"] {
+    transform: translateY(-50px);
+  }
+  
+  [data-animation="fade-right"] {
+    transform: translateX(-50px);
+  }
+  
+  [data-animation="zoom-in"] {
+    transform: scale(0.8);
+  }
+  
+  [data-animation].animate {
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
